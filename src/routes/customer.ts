@@ -51,7 +51,7 @@ router.get('/customer',
     const failed = req.query.failed;
 
     let responseAddress = parse();
-    let customers = failed ? responseAddress.customers.filter(ra => ra.failed) : responseAddress.customers;
+    let customers = failed ? responseAddress.customers.filter(ra => ra.failed) : responseAddress.customers.filter(ra => !ra.failed);
 
     res.status(201).send(customers);
 
