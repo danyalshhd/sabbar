@@ -6,13 +6,17 @@ To run the backend
 localhost:3000/driver?idle=true
 localhost:3000/driver
 
+```
 Show assigned Dirver as well
+```
 localhost:3000/customer?failed=true
 localhost:3000/customer
+```
 
-PART# 1
+- PART# 1
 
 Creating Customer
+```
 POST
 localhost:3000/customer
 {
@@ -22,8 +26,10 @@ localhost:3000/customer
 "long": 20.6831751,
 "numRides": 3
 }
+```
 
 Updating Customer
+```
 PUT
 localhost:3000/customer/:customerId
 {
@@ -33,8 +39,10 @@ localhost:3000/customer/:customerId
 "long": 20.6831751,
 "numRides": 3
 }
+```
 
 Deleting Customer
+```
 DELETE
 localhost:3000/customer/:customerId
 ```
