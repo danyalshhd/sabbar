@@ -2,7 +2,7 @@ To run the backend
 
 - npm i
 - npm start
-
+```
 localhost:3000/driver?idle=true
 localhost:3000/driver
 
@@ -37,3 +37,4 @@ localhost:3000/customer/:customerId
 Deleting Customer
 DELETE
 localhost:3000/customer/:customerId
+```
